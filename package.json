@@ -1,0 +1,42 @@
+{
+	"name": "code",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"//test": "echo \"Error: no test specified\" && exit 1",
+		"test": "mocha --timeout 10000",
+		"start": "nodemon src/app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NguyenDuong-GCH0804/1640-BE.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/NguyenDuong-GCH0804/1640/issues"
+	},
+	"homepage": "https://github.com/NguyenDuong-GCH0804/1640#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.0",
+		"excel4node": "^1.7.2",
+		"express": "^4.17.3",
+		"fs": "^0.0.1-security",
+		"jsonwebtoken": "^8.5.1",
+		"jszip": "^3.8.0",
+		"mongoose": "^6.2.4",
+		"multer": "^1.4.4",
+		"nodemailer": "^6.7.3",
+		"nodemon": "^2.0.15",
+		"uniqid": "^5.4.0"
+	},
+	"devDependencies": {
+		"chai": "^4.3.6",
+		"chai-http": "^4.3.0",
+		"mocha": "^9.2.2"
+	}
+}

@@ -2,7 +2,6 @@ import ideaModel from "../../model/idea.model.js"
 import xl from "excel4node"
 import * as fs from "fs"
 import JSZip from "jszip"
-import path from "path"
 import timeModel from "../../model/time.model.js"
 
 export const create = async (req, res, next) => {

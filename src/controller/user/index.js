@@ -13,13 +13,16 @@ export const getUser = async (req, res, next) => {
 		if (role == "all") {
 			count = await userModel.count({})
 			users = await userModel
-				.find({}, "name email avatar _id phone address category")
+				.find({}, "name email avatar _id phone role address category")
 				.limit(3)
 				.skip(page * 3)
 		} else {
 			count = await userModel.count({ role: role })
 			users = await userModel
-				.find({ role: role }, "name email avatar _id phone address category")
+				.find(
+					{ role: role },
+					"name email avatar _id role phone address category"
+				)
 				.limit(3)
 				.skip(page * 3)
 		}
